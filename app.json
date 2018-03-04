@@ -1,5 +1,9 @@
 {
   "expo": {
+    "name": "Todo Empty State Transition",
+    "slug": "todoemptystate",
+    "privacy": "public",
+    "description": "An inspired UI+UX from https://dribbble.com/shots/4282122-Empty-State",
     "sdkVersion": "25.0.0"
   }
 }
