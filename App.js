@@ -11,13 +11,11 @@ export default class App extends React.Component {
   }
 
   transitionToInput() {
-    // this.input.focus();
     this.setState({inputActive: true})
     Animated.timing(
       this.state.transition,
       {
         toValue: 1,
-        // duration: 2500,
         easing: Easing.in(Easing.exp)
       }
     ).start();
@@ -26,9 +24,7 @@ export default class App extends React.Component {
   transitionToSplash() {
     Animated.timing(
       this.state.transition,
-      {
-        toValue: 0
-      }
+      {toValue: 0}
     ).start(() => this.setState({inputActive: false}));
   }
 
