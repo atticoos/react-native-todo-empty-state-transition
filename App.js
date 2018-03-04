@@ -16,7 +16,8 @@ export default class App extends React.Component {
       this.state.transition,
       {
         toValue: 1,
-        easing: Easing.in(Easing.exp)
+        easing: Easing.in(Easing.exp),
+        userNativeDriver: true
       }
     ).start();
   }
@@ -24,7 +25,7 @@ export default class App extends React.Component {
   transitionToSplash() {
     Animated.timing(
       this.state.transition,
-      {toValue: 0}
+      {toValue: 0, userNativeDriver: true}
     ).start(() => this.setState({inputActive: false}));
   }
 
